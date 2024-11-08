@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section id="left-side">
+        <div id="title-description">
+          <h1 id="title">Get yo sword</h1>
+          <p id="description">Fill out and choose. 18+ Only!</p>
+        </div>
+
+        <form action="" id="survey-form">
+          <div>
+            <label for="name" id="name-label">Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Warrior's name"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="email" id="email-label">Email</label>
+            <input
+              type="text"
+              id="email"
+              placeholder="Warrior's email"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="age" id="age-label">Age</label>
+            <input
+              type="number"
+              name="age"
+              id="age"
+              placeholder="Warrior's age"
+              min="18"
+            />
+          </div>
+
+          <div id="gender-div">
+            <label for="">Gender</label>
+            <div id="gender-options">
+              <label for="gender-label-m" id="gender-label">Male</label>
+              <input
+                type="radio"
+                name="gender"
+                id="gender-label-m"
+                value="male"
+              />
+
+              <label for="gender-label-f" id="gender-label">Female</label>
+              <input
+                type="radio"
+                name="gender"
+                id="gender-label-f"
+                value="female"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label for="sword" id="sword-label">Sword Type</label>
+            <select name="sword" id="sword">
+              <option value="Excalibur">Excalibur</option>
+              <option value="Greatsword">Greatsword</option>
+              <option value="Broadsword">Broadsword</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="my-text-area">Notes</label>
+            <textarea
+              id="my-text-area"
+              rows="5"
+              cols="65"
+              placeholder="Tell us why you need it..."
+            ></textarea>
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      <!--  -->
+      <section id="right-side">
+        <img src="./images/swords-bg.webp" alt="" />
+      </section>
+    </main>
+  </body>
+</html>

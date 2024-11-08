@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
+/* DM Serif Display */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    /* margin: auto; */
+
+    /* width: 1200px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 1200px; */
+
+    background-color: rgb(226, 226, 226);
+}
+
+input{
+    width: 500px;  
+    height: 50px; 
+    border:none;
+
+    padding:10px;
+
+    border-radius: 10px;
+}
+
+input::placeholder{
+    color:rgb(117, 117, 117, .5);
+    font-style: italic;
+}
+
+#my-text-area::placeholder{
+    color:rgb(117, 117, 117, .5);
+    font-style: italic;
+}
+
+select{
+    width: 500px;  
+    height: 50px; 
+    border:none;
+
+    padding:10px;
+
+    border-radius: 10px;
+}
+
+button{
+    width: 500px;  
+    height: 50px; 
+    border:none;
+
+    margin: 40px 0;
+
+    padding:10px;
+    
+    border-radius: 10px;
+}
+
+label{
+    display: flex;
+    margin: 10px 0;
+    font-size: 18px;
+    color:rgb(255, 255, 255);
+}
+
+#my-text-area{
+    border: none;
+    outline: none;
+    padding: 10px;
+
+    border-radius: 5px;
+}
+
+main{
+    display:flex;
+    flex-flow: row;
+    justify-content: center;
+
+    width: 1200px;
+
+    background-color: rgb(104, 196, 238);
+
+    margin-top: 100px; 
+    /* Disable margin top when fixing the body flex */
+
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#left-side{
+    padding-left: 20px;
+    width: 60%;
+}
+#right-side{
+    width: 40%;
+}
+
+#title-description{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+
+    margin-top: 15px;
+}
+
+#survey-form{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+/*  */
+#right-side img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+
+    border-radius: 10px;
+}
+/*  */
+#title{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 45px;
+    color:rgb(255, 255, 255);
+}
+#description{
+    font-style: italic;
+    font-size: 15px;
+    letter-spacing: 2.8px;
+    color: rgb(87, 87, 87);
+}
+
+button[type="submit"]{
+    background-color: rgb(255, 255, 255);
+    color:rgb(58, 58, 58);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#gender-div{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    /* width: 100%; */
+    position: relative;
+    left: -160px;
+}
+
+#gender-options{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 5px;
+}
+
+input[type="radio"]{
+    width: 20px;
+    height: 20px;
+
+    margin-right: 15px;
+}
